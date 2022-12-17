@@ -20,10 +20,10 @@ struct node{
     struct node *next;
 };
 
-struct node* front = NULL; //kuyrugun önündeki elemanı gösterir.
-struct node* rear = NULL; //kuyrugun arkasındaki elemanı gösterir.
+struct node* front = NULL; // -TR- kuyrugun önündeki elemanı gösterir. -EN- shows the element in front of the queue.
+struct node* rear = NULL; // -TR- kuyrugun arkasındaki elemanı gösterir. -EN- shows the element in rear of the queue.
 
-//Düğüm (Node) olusturma fonk.
+// -TR- Düğüm (Node) olusturma fonk. -EN- Crate node function
 struct node* dugumOlustur(int x){
     struct node* dugum = (struct node*)malloc(sizeof(struct node));
     dugum->data = x;
@@ -31,7 +31,7 @@ struct node* dugumOlustur(int x){
     return dugum;
 }
 
-//Kuyruğa veri ekleme fonk.
+//Kuyruğa veri ekleme fonk. 
 void enQueue(int x){
     //Bu fonk tamamlayiniz.
     
