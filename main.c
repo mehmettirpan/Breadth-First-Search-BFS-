@@ -12,7 +12,7 @@
 int dizi[6][6];  // -TR- matris formumuzun kendisini içerir.   -EN- This integer is the Matrix form
 bool ziyaret[6]; // -TR- düğümlerin ziyaret edilip edilmediği kontrolü için oluşturulan dizi.  -EN-
 
-//Kuyruk yapisi için gerekli parametreler.
+//-TR- Kuyruk yapisi için gerekli parametreler. -EN- Necessary parameter to queue struct
 //Kuyruklar FIFO mantıginda calisir.
 
 struct node{
@@ -31,9 +31,8 @@ struct node* dugumOlustur(int x){
     return dugum;
 }
 
-//Kuyruğa veri ekleme fonk.
+// -TR- Kuyruğa veri ekleme fonk.  -EN- 
 void enQueue(int x){
-    //Bu fonk tamamlayiniz.
     
     //Yeni Node olustur
     //Eğer kuyruk boş ise kuyruğu olustur.
@@ -101,15 +100,22 @@ void BFS(int root){
     }
     }
     
+//    -TR-
     //Kuyruğa ekleme ve ziyaret etme işlemleri
     //Bir düğümün birden fazla komşusu olabilir. Bunu kontrol etmek amacıyla döngü ve if bloğu eklenmiştir.
     //Koşul olarak düğümün daha önceden ziyaret edilmemiş ve o anki düğüm için aradaki ilişkinin olmasına bakılması gerekir
     //yani 1 mi diye bakmamız gerekir.
     //Bu koşullar sağlandıysa artık ziyaret edildi ve kuyruğa eklendi.
     
+//    -EN-
+    //Adding to the queue and visiting operations
+    //A node can have more than one neighbor. A loop and an if block have been added to check this.
+    //As a condition, it is necessary to check that the node has not been visited before and that the Decoupling is for the current node
+    //so we need to see if it is 1.
+    //If these conditions are met, it has now been visited and added to the queue.
 }
 
-//Matris formunu txt dosyasından okuyan fonk.
+// -TR- Matris formunu txt dosyasından okuyan fonk. -EN- A function that reads the matrix form from a txt file.
 void veriOku(){
     int i = 0;
     FILE *fp = fopen("matris2.txt", "r");
