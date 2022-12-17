@@ -31,19 +31,16 @@ struct node* dugumOlustur(int x){
     return dugum;
 }
 
-// -TR- Kuyruğa veri ekleme fonk.  -EN- 
+// -TR- Kuyruğa veri ekleme fonk.  -EN-  Add data in the queue
 void enQueue(int x){
     
-    //Yeni Node olustur
-    //Eğer kuyruk boş ise kuyruğu olustur.
-    //değilse, Düğümde eleman var ise rear'ın bir sonrakine yeni node koy ve yeni düğümü rear'a atama yap.
-    struct node* yeniNode = dugumOlustur(x);
-    if(rear == NULL){
+    struct node* yeniNode = dugumOlustur(x);     // -TR- Yeni Node olustur  -EN-  Create new node
+    if(rear == NULL){       //-TR-Eğer kuyruk boş ise kuyruğu olustur. -EN- If the queue is empty, create the queue
         
         front = yeniNode;
         rear=yeniNode;
     }
-    else{
+    else{       //değilse, Düğümde eleman var ise rear'ın bir sonrakine yeni node koy ve yeni düğümü rear'a atama yap.
         rear->next=yeniNode;
         rear=yeniNode;
     }
@@ -75,7 +72,6 @@ bool KuyrukBosMu(){
 }
 
 
-//BFS fonk.
 //Baslangic parametresi olarak kök değişken alıyor.
 void BFS(int root){
     //1. Başlangıçta bütün node (düğüm) leri ziyaret edilmemiş olarak atansın.
