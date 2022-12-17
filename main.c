@@ -65,7 +65,7 @@ void deQueue(){
     }
 }
 
-bool KuyrukBosMu(){
+bool KuyrukBosMu(){  // Is queue empty
     if(front == NULL)
         return true;
     return false;
