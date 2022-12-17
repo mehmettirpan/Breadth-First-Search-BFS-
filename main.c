@@ -6,11 +6,11 @@
 //
 
 #include<stdio.h>
-#include<stdlib.h> //Malloc için gerekli lib.
-#include<stdbool.h> //bool yapisi için gerekli lib.
+#include<stdlib.h>  // -TR- Malloc için gerekli lib. -EN- Malloc function need to this library.
+#include<stdbool.h> // -TR- bool yapisi için gerekli lib.  -EN- Use to Bool struct need this library
 
-int dizi[6][6];  //matris formumuzun kendisini içerir.
-bool ziyaret[6]; //düğümlerin ziyaret edilip edilmediği kontrolü için oluşturulan dizi.
+int dizi[6][6];  // -TR- matris formumuzun kendisini içerir.   -EN- This integer is the Matrix form
+bool ziyaret[6]; // -TR- düğümlerin ziyaret edilip edilmediği kontrolü için oluşturulan dizi.  -EN-
 
 //Kuyruk yapisi için gerekli parametreler.
 //Kuyruklar FIFO mantıginda calisir.
@@ -31,7 +31,7 @@ struct node* dugumOlustur(int x){
     return dugum;
 }
 
-//Kuyruğa veri ekleme fonk. 
+//Kuyruğa veri ekleme fonk.
 void enQueue(int x){
     //Bu fonk tamamlayiniz.
     
